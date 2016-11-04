@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>User Account sign-in form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body> 
+
+<div class="container">
+    
+    <h1>User Account Form</h1>   
+      
+    <form>
+      <div class="form-group" width="500px"">
+        <h4><label class="label label-default" for="userName">username :</label></h4>
+        <input id="username" type="text" minlength="6" maxlength="18" required>
+        <h4><label id="username_l_s" class="label label-danger" style="display:none">!!! username field must contain from 6 to 18 characters !!!</label></h4>
+        <h4><label id="username_empty" class="label label-danger" style="display:none">!!! username field can not be empty !!!</label></h4>
+        <h4><label id="username_exists" class="label label-danger" style="display:none">!!! username already exsist !!!</label></h4>     
+      </div>
+
+       <div class="form-group">
+        <label for="password">password :</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password2">re-enter password :</label>
+        <input type="password" class="form-control" id="password2" required>
+        <button class="btn btn-default" id="password2Btn">Check constrains</button>    
+        <h4><label id="password_dont_match" class="label label-danger" style="display:none">!!! passwords do not match !!!</label></h4>
+        <h4><label id="password_match" class="label label-success" style="display:none">!!! passwords ok!!!<label></h4>             
+      </div>     
+
+      <button class="btn btn-default" type="submit">Submit</button>      
+    </form>
+
+</div>
+
+
+  
+  
+</body>
